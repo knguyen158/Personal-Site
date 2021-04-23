@@ -167,6 +167,7 @@ footer li a:hover, footer li a:focus
 	width: auto;
 	height: auto;
 	padding-bottom: 5%;
+	display: flex;
 }
 
 #services
@@ -174,7 +175,7 @@ footer li a:hover, footer li a:focus
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 1% 2.5% 1% 2.5%;
+	padding: 1% 5% 1% 5%;
 	font-size: 1.2em;
 
 }
@@ -183,7 +184,7 @@ footer li a:hover, footer li a:focus
 {
 	flex: 1;
 	flex-wrap: wrap;
-	margin: 0% 5% 0% 5%;
+	margin: 0% 2% 0% 2%;
 	padding: 5%;
 	justify-content: center;
 }
