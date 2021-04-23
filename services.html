@@ -1,60 +1,340 @@
-<!-------w----------
+/*******w***********
 
     Project 3
     Name: Khanh Nguyen
-    Date: 2021-04-14
-    Description: Project 3 Services Page
-	
-------------------->
+    Date: 2021-04-20
+    Description: CSS style for pages
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Services</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <main>
-        	<header id="header">
-                <img src="banner.jpg" id="headerimage" alt="headerimage">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>                      
-                    </ul>
-                </nav>
-            </header>
-            <div id="maincontent">
-                <h1 id="services_h1">These are scenarios from which our clients receiving when using our services:</h1>
-                <div id ="services">
-                    <div id="services1">
-                        <img src="solution.jpg" id="services_img1" alt="services_img1">
-                        <p class="titles">Expert Solutions:</p>
-                        <p> Our experts are always available to offer you the best solutions in any field. Our services can be accessed 24/7 with easy.</p>
-                    </div>
-                    <div id="services2">
-                        <img src="inefficiencies.jpg" id="services_img2" alt="services_img2">
-                        <p class="titles">Looking for Inefficiencies:</p>
-                        <p>Inefficiencies are existing with or without your noticing. With our trusted approaches, we will eliminate all your inefficiencies in your operation so you can make better use of your time, money and people.</p>
-                    </div>
-                    <div id="services3">
-                        <img src="improvement.jpg" id="services_img3" alt="services_img3">
-                        <p class="titles">Better Improvement:</p>
-                        <p>If you think your business is lucrative, you need to think again. We always provide improvements to your business operation. Your profit will be more fruitful than you can imagine.</p>
-                    </div>
-                </div>
-                <h2 id="services_h2">At Khanh Nguyen Consulting Group, we are beyond your expectations.</h2>
-            </div>            
-    		<footer>
-                <p id="footer1">Copyright &copy; 2021 - Khanh Nguyen</p> 
-                <ul id="footer2">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>                     
-                </ul>                
-            </footer>
-        </main>
-    </body>
-</html>
+*******************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*
+{
+	box-sizing:border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lato", sans-serif;
+}
+
+#header
+{
+	justify-content: space-between;
+	align-items: center;
+}
+
+#headerimage
+{
+	display: flex;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+nav
+{
+	text-align: center;
+	font-weight: bold;
+	margin: 0px auto;
+	font-size: 1.3em;
+
+	background: #ffa84c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+}
+
+	nav ul
+	{
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	
+	nav ul li
+	{
+		padding: 0.5em 4em;
+		border: 0px solid #606;	
+	}
+
+	nav ul li a
+	{
+		color: #000;
+		text-decoration: none;
+		font-size: 1.5em;
+	}
+
+	nav ul li a:hover, nav ul li a:focus, nav ul li a:active
+	{		
+		background: rgb(179,220,237); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+	}
+
+#success
+{
+	height: 40%;
+	width: 40%;	
+	margin-left: auto;
+  	margin-right: auto;
+  	display: flex;
+}
+
+#index_intro
+{
+	font-size: 1.3em;
+	margin: 2% 20% 2% 20%;
+	text-align: center;
+	display: block;
+}
+
+#index_h1
+{
+	color: #0033cc;
+	font-size: 2em;
+	font-weight: bold;	
+	display: block;
+	text-align: center;
+	margin: 2% 0;
+}
+
+#index_h2
+{
+	color: #ff6600;
+	font-style: italic;
+	margin: 2% 20% 2% 20%;
+	display: block;
+	text-align: center;
+	margin: 2% 0;
+}
+
+#footer2
+{
+	flex-wrap: wrap;
+	padding-right: 3%;
+}
+
+#footer1
+{
+	padding-left: 3%;
+}	
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+	text-align: center;
+	font-size: 1em;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1%;
+	padding-bottom: 10px;
+	background: #C9D6FF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#footer2 li
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 7px 7px;
+}
+
+footer ul li a
+{
+	text-decoration: none;
+	color: #0000ff;
+}
+
+footer li a:hover, footer li a:focus
+{
+	color: #ffa500;
+	text-decoration: none;
+}
+
+#services_img1, #services_img2, #services_img3
+{
+	width: auto;
+	height: auto;
+	padding-bottom: 5%;
+	display: flex;
+}
+
+#services
+{
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1% 5% 1% 5%;
+	font-size: 1.2em;
+
+}
+
+#services1, #services2, #services3
+{
+	flex: 1;
+	flex-wrap: wrap;
+	margin: 0% 2% 0% 2%;
+	padding: 5%;
+	justify-content: center;
+}
+
+.titles
+{
+	font-style: italic;
+	font-weight: bolder;
+	color: #ff6600;
+	font-size: 1.2em;
+	padding: 5% 0px;
+}
+
+#services_h1
+{
+	color: #0033cc;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin: 2% 0;
+}
+
+#services_h2
+{
+	font-size: 2em;
+	color: #ff6600;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	margin: 2% 0;
+}
+
+.error 
+{
+	color: red;
+	margin-left: 7%;
+}
+
+#maincontent ul
+{
+	list-style: none;
+}
+
+#contact_h1
+{
+	color: #0033cc;
+	font-size: 2em;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin: 2% 0;
+}
+
+#contactForm label
+{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	display: block;
+	margin-left: 7%;
+}
+
+#contactForm ul
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#contactForm ul li
+{
+	margin: 10px;
+}
+
+#contactForm ul input
+{
+	width: 85%;
+	height: 27px;
+	margin-left: 7%;
+}
+
+#comments
+{
+	width: 85%;
+	resize: none;
+	background: #e6ffe6;
+	margin-left: 7%;
+}
+
+#fullname, #phonenumber, #email
+{
+	background: #e6ffe6;
+}
+
+#contactForm button
+{
+	width: 25%;
+	height: 25%;
+	font-size: 1.5em;
+	margin: 10px 0px 35px 9%;
+	white-space: normal;
+	word-wrap: break-word;
+	border-radius: 5px;
+}
+
+#submit
+{
+	background-color: #ffa500;
+}
+
+@media (min-width: 480px)
+{
+	#maincontent
+	{
+		justify-content: center;
+    	align-items: center;
+    	background: #C9D6FF;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    	padding: 10px;
+		margin: auto;
+		position: relative;
+	}
+
+	#contactForm
+	{
+		border: 1px solid;
+		border-radius: 1px;
+		margin-top: 3%;
+		margin-bottom: 4%;
+		display: block;
+		max-width: 555px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body
+	{
+		height: auto;
+		margin-bottom: 0;
+	}
+}
+
+#comments:focus, #fullname:focus, #phonenumber:focus, #email:focus
+{
+	color: #8080ff;
+	background-color: #ffcccc;
+	font-size: 1em;
+}
+
+#image_wrapper
+{
+	display: inline-block;
+	overflow: hidden;
+}
