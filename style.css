@@ -87,12 +87,12 @@ html {
 
 #footer1 {
 	color: white;
-	padding-left: 19%;
+	padding-left: 15%;
 }
 
 #footer2 {
 	flex-wrap: wrap;
-	padding-right: 19%;
+	padding-right: 15%;
 }
 
 #footer2 a {
