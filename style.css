@@ -141,7 +141,7 @@ html {
 	color: black;
 }
 
-#contactinfo {
+#contactinfo, #D3, #scott {
 	font-weight: bolder;
 	font-size: 1.5em;
 }
@@ -155,4 +155,9 @@ html {
 	margin-right: auto;
 	margin-top: 5%;
 	margin-bottom: 25%;
+}
+
+
+#footer2 li a:hover {
+	color: white;
 }
