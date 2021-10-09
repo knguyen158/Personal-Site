@@ -61,7 +61,7 @@ html {
 	margin: 50px 0px 0px 0px;
 }
 
-.navbar-burger, .navbar-menu, .navbar-item {
+.navbar-burger, .navbar-menu, .navbar-item, .navbar-brand {
 	background-color: #e6f7ff;
 }
 
