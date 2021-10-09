@@ -1,0 +1,231 @@
+/*******w***********
+
+    Project 3
+    Name: Khanh Nguyen
+    Date: 2021-04-20
+    Description: CSS style for pages
+
+*******************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	box-sizing:border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lato", sans-serif;	
+}
+
+html {
+	background-image: url('Khanh.jpg');
+	height: 100%;
+ 	position: relative;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+ 	position: relative;
+}
+
+main {
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+ 	display: block;
+ 	padding-bottom: 2em;
+}
+
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: block;
+}
+
+#maincontent {
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	color: white;
+	font-size: 1.15em;
+	line-height: 1.7;
+	margin-bottom: 5em;
+	margin-top: 2em;
+}
+
+.column {
+	margin: 15px;
+	padding: 0px 1em 0px 1em;
+}
+
+#khanh {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+#index_h1 {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#div1, #div2 {
+	border-style: groove;
+	padding: 30px;
+}
+
+#city {
+	margin: 50px 0px 0px 0px;
+}
+
+#footer
+{
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+	text-align: center;
+	font-size: 1em;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 1em;	
+	position:absolute;
+  bottom:1em;
+  width: 100%;
+}
+
+#footer1 {
+	color: white;	
+	padding-left: 19%;
+}
+
+#footer2 {
+	flex-wrap: wrap;	
+	padding-right: 19%;
+}
+
+#footer2 a {
+	color: #80d4ff;
+}
+
+#footer2 li {
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 7px 7px;
+}
+
+.content-tab h1, {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#d3support {	
+	margin-top: 2em;
+	display: block;
+  margin-left: auto;
+ 	margin-right: auto;
+}
+
+#scottplatonshop {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.container_section {
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tab, #myprojects {
+	color: black;
+}
+
+#contactinfo, #D3, #scott {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#contactfield {
+	border-style: groove;
+	border-radius: 15px;
+	padding: 1.5em;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 25%;
+	display: block;
+	word-wrap: break-word;
+}
+
+#footer2 li a:hover {
+	color: white;
+}
+
+#marquee {
+  height: 2em;
+  width: 100%;
+  padding: 10px 0px 25px 0px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-size: 2em;
+}
+
+#marquee div {
+  display: block;
+  width: 200%;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 12s linear infinite;
+}
+
+#marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@media (min-width: 480px) {
+    #contactfield {
+		border-style: groove;
+		border-radius: 15px;
+		padding: 1.5em;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		margin-bottom: 25%;
+		min-width: 350px;
+		display: block;
+	}
+
+	body
+	{
+		height: auto;
+	}
+}
+
+.navbar{
+  flex-grow: 1;
+}
+
+#card-content {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 0px;
+}
+
+.navbar.is-light.is-transparent, .navbar-item, .navbar-menu.is-active, .navbar-menu {
+	background-color: #cce6ff;
+}
