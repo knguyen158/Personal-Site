@@ -19,6 +19,10 @@ html {
 	background-image: url('Khanh.jpg');
 }
 
+main {
+	position: relative;
+}
+
 [data-tab-content] {
 	display: none;
 }
@@ -30,10 +34,10 @@ html {
 #maincontent {
 	margin: auto;
 	width: 65%;
-	height: 100%;
 	color: white;
 	font-size: 1.15em;
 	line-height: 1.7;
+	padding-bottom: 5em;
 }
 
 .column {
@@ -80,19 +84,20 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;;
-	margin-bottom: 1.5em;
-	position:relative;
-  	bottom:0;
+	margin-bottom: 1em;	
+	position:absolute;
+  bottom:0;
+  width: 100%;
 }
 
 #footer1 {
-	color: white;
-	padding-left: 15%;
+	color: white;	
+	padding-left: 19%;
 }
 
 #footer2 {
-	flex-wrap: wrap;
-	padding-right: 15%;
+	flex-wrap: wrap;	
+	padding-right: 19%;
 }
 
 #footer2 a {
@@ -114,7 +119,7 @@ html {
 #d3support {	
 	margin-top: 2em;
 	display: block;
-  	margin-left: auto;
+  margin-left: auto;
  	margin-right: auto;
 }
 
@@ -188,3 +193,4 @@ html {
   0% { left: 0; }
   100% { left: -100%; }
 }
+
