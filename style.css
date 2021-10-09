@@ -1,0 +1,188 @@
+/*******w***********
+
+    Project 3
+    Name: Khanh Nguyen
+    Date: 2021-04-20
+    Description: CSS style for pages
+
+*******************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	box-sizing:border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lato", sans-serif;	
+}
+
+html {
+	background-image: url('Khanh.jpg');
+}
+
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: block;
+}
+
+#maincontent {
+	margin: auto;
+	width: 65%;
+	height: 100%;
+	color: white;
+	font-size: 1.15em;
+	line-height: 1.7;
+}
+
+.column {
+	margin: 15px;
+	padding: 0px 1em 0px 1em;
+}
+
+#khanh {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+#index_h1 {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#div1, #div2 {
+	border-style: groove;
+	padding: 30px;
+}
+
+#city {
+	margin: 50px 0px 0px 0px;
+}
+
+.navbar-burger, .navbar-menu, .navbar-item {
+	background-color: #e6f7ff;
+}
+
+.navbar-start {
+	font-size: 1.2em;
+}
+
+#footer
+{
+	display: flex;
+	justify-content: space-between;
+	clear: both;
+	text-align: center;
+	font-size: 1em;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;;
+	margin-bottom: 1.5em;
+}
+
+#footer1 {
+	color: white;
+	padding-left: 19%;
+}
+
+#footer2 {
+	flex-wrap: wrap;
+	padding-right: 19%;
+}
+
+#footer2 a {
+	color: #80d4ff;
+}
+
+#footer2 li {
+	display: inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 7px 7px;
+}
+
+.content-tab h1, {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#d3support {	
+	margin-top: 2em;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+}
+
+#scottplatonshop {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+.container_section {
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-body, .hero-foot{
+	background-color: #99ccff;
+}
+
+.tab, #myprojects {
+	color: black;
+}
+
+#contactinfo, #D3, #scott {
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+#contactfield {
+	border-style: groove;
+	border-radius: 15px;
+	padding: 1.5em;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 25%;
+}
+
+#footer2 li a:hover {
+	color: white;
+}
+
+#marquee {
+  height: 2.5em;
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-size: 2em;
+}
+
+#marquee div {
+  display: block;
+  width: 200%;
+  height: 50px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 12s linear infinite;
+}
+
+#marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
