@@ -212,36 +212,7 @@ main {
 
 	body {
 		height: auto;
-	}
-	
-	#marquee {
-		height: 2em;
-		width: 100%;
-		padding: 10px 0px 25px 0px;
-		overflow: hidden;
-		position: relative;
-		color: white;
-		font-size: 2em;
-	}
-
-	#marquee div {
-  		display: block;
-  		width: 200%;
-		height: 50px;
-		position: absolute;
-		overflow: hidden;
-		animation: marquee 12s linear infinite;
-	}
-
-	#marquee span {
-  		float: left;
-  		width: 50%;
-	}
-
-	@keyframes marquee {
- 		0% { left: 0; }
-  		100% { left: -100%; }
-	}
+	}	
 }
 
 .navbar{
