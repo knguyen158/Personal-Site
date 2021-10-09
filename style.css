@@ -17,6 +17,13 @@
 
 html {
 	background-image: url('Khanh.jpg');
+	height: 100%;
+ 	position: relative;
+}
+
+body {
+	height: 100%;
+ 	position: relative;
 }
 
 main {
